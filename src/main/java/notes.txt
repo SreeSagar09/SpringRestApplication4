@@ -1,0 +1,20 @@
+A Program to demonstrate the use of @RequestMapping annotation attributes name, value, path, method:
+Programs:
+* AppConfig.java
+* AppInit.java
+* ApplicationController1.java
+* ApplicationController2.java
+* ApplicationController3.java
+Notes:
+* @RequestMapping annotation accept eight attributes those are name, value, path, method, params, headers, consumes, produces
+* The name attribute of the @RequestMapping annotation is used to assign a logical name to the mapping.
+* This name attribute is accept String value and it is supported at class as well as method level also.
+* The value attribute is an alias for path attribute, this is used to mapping the web request at class level and method level also.
+* This name attribute is accept array of String values and it is supported at class level as well as method level also.
+* The path attribute is an alias for value attribute, this is used to mapping the web request at class level and method level also.
+* This path attribute is accept array of String values and it is supported at class level as well as method level also.
+* The method attribute is used to map request method type.
+* This method attribute is accept array of RequestMethod enum type and this is supported at class and method level also, if we use class level it will inherits to all methods in the class.
+* If method attribute is not defined then that request handler method can be accessed by any request method types.
+* If request method type is not matching with the mapping uri then it will give 405 Method Not Allowed.
+* If method attribute is defined in class level @RequestMapping annotation then that method type is inherited to all handler methods also.
