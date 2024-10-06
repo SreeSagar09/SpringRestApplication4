@@ -15,41 +15,61 @@ public class ApplicationController3 {
 	
 	@RequestMapping(path = "/getHandlerMethod", method = RequestMethod.GET)
 	public ResponseEntity<Map<String, Object>> getHandlerMethod(){
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "getHandlerMethod");
-		data.put("className", "ApplicationController3");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "getHandlerMethod");
+			data.put("className", "ApplicationController3");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@RequestMapping(path = "/putHandlerMethod", method = RequestMethod.PUT)
 	public ResponseEntity<Map<String, Object>> putHandlerMethod(){
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "putHandlerMethod");
-		data.put("className", "ApplicationController3");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "putHandlerMethod");
+			data.put("className", "ApplicationController3");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@RequestMapping(path = "/patchHandlerMethod", method = RequestMethod.PATCH)
 	public ResponseEntity<Map<String, Object>> patchHandlerMethod(){
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "patchHandlerMethod");
-		data.put("className", "ApplicationController3");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "patchHandlerMethod");
+			data.put("className", "ApplicationController3");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
 	@RequestMapping(path = "/deleteHandlerMethod", method = RequestMethod.DELETE)
 	public ResponseEntity<Map<String, Object>> deleteHandlerMethod(){
-		Map<String, Object> data = new LinkedHashMap<>();
-		data.put("methodName", "deleteHandlerMethod");
-		data.put("className", "ApplicationController3");
-		
-		ResponseEntity<Map<String, Object>> responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		ResponseEntity<Map<String, Object>> responseEntity = null;
+		try {
+			Map<String, Object> data = new LinkedHashMap<>();
+			data.put("methodName", "deleteHandlerMethod");
+			data.put("className", "ApplicationController3");
+			
+			responseEntity = new ResponseEntity<Map<String,Object>>(data, HttpStatus.OK);
+		} catch (Exception e) {
+			responseEntity = new ResponseEntity<Map<String,Object>>(HttpStatus.INTERNAL_SERVER_ERROR);
+		}
 		return responseEntity;
 	}
 	
